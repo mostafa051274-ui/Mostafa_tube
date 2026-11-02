@@ -2,7 +2,6 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ main, master ]
 
 jobs:
   build:
@@ -22,7 +21,6 @@ jobs:
         with:
           flutter-version: '3.19.x'
           channel: 'stable'
-          cache: true
 
       - name: Install dependencies
         run: flutter pub get
